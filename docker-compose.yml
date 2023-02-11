@@ -6,7 +6,7 @@ services:
       - WS_PORT=8548
       - NETWORK=colosseum
       - SUB=--sub.urls ws://127.0.0.1:8579,ws://127.0.0.1:8581,ws://127.0.0.1:8583
-    build: .
+    image: quai
     ports:
       - "30303"
       - "8547"
@@ -22,7 +22,7 @@ services:
       - REGION=--region 2
       - DOM=--dom.url ws://127.0.0.1:8547
       - SUB=--sub.urls ws://127.0.0.1:8615,ws://127.0.0.1:8647,ws://127.0.0.1:8679
-    build: .
+    image: quai
     ports:
       - "30306"
       - "8582"
